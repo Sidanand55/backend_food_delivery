@@ -16,7 +16,9 @@ const port= 4000
 
 // middleware 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: "https://frontend-food-delivery-7qphpe50j-sidanand55s-projects.vercel.app/"
+}))
 
 // db connection
 connectDB();
